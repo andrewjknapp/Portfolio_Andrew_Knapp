@@ -1,0 +1,20 @@
+body {
+    background-image: url(/assets/images/background.jpg);
+}
+
+a,
+h1 {
+    color: white;
+}
+
+#headshot {
+    width: 25%;
+}
+
+span {
+    font-size: large;
+}
+
+.main-background {
+    background-color: rgb(228, 228, 228);
+}
