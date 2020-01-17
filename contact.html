@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
@@ -7,31 +8,33 @@
     <!-- Link to Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <!-- Link to personal Stylesheet -->
-    <link rel="stylesheet" href="/assets/style.css">
+    <link rel="stylesheet" type="text/css" href="/assets/style.css">
 
 </head>
 
 
 
-<body>
+<body class="bg-dark">
 
   <!-- Defines Header with name and navbar -->
-  <header class="container-fluid bg-secondary mx-0">
+  <header class="container-fluid mx-0 bg-secondary">
     <div class="row">
-      <div class="col-sm">
-        <a href="index.html"><h1>Andrew Knapp</h1></a>
+      <div class="col-md-5 col-sm-12 bg-primary rounded">
+        <a href="index.html"><h1 class="text-white text-center">Andrew Knapp</h1></a>
       </div>
 
-      <div class="col-sm">
-        <ul class="nav justify-content-end">
+      <div class="col-md-2 col-sm-0"></div>
+
+      <div class="col-md-5 col-sm-12">
+        <ul class="nav justify-content-center">
           <li class="nav-item">
-            <a class="nav-link" href="index.html">About</a>
+            <a class="nav-link text-white" href="index.html">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="portfolio.html">Portfolio</a>
+            <a class="nav-link text-white" href="portfolio.html">Portfolio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
+            <a class="nav-link text-white" href="contact.html">Contact</a>
           </li>
         </ul>
       </div>
@@ -39,35 +42,51 @@
     </div>
   </header>
 
-  
-    <main class="card w-50 p-2 mx-auto mt-3" style="width: 18rem;">
-      <h2 class="card-title mx-auto">Contact</h2>
-      <hr>
-      <div class="card-body">
-          <form>
-            <div class="form-group">
-              <label for="nameInput">Name</label>
-              <input type="text" class="form-control" id="nameInput" aria-describedby="name" placeholder="Name">
-            </div>
+  <main>
+    <div class="row">
+      <div class="col-md-3 col-1"></div>
 
-            <div class="form-group">
-              <label for="exampleInputEmail1">Email</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
-            </div>
-
-            <div class="form-group">
-                <label for="messageInput">Message</label>
-                <textarea class="form-control" id="messageInput" rows="3" placeholder="Send me a message"></textarea>
-            </div>
-            
-              <button type="submit" class="btn btn-primary">Submit</button>
-          </form>
+      <div class="col-md-6 col-10">
+        <div class="card w-100 p-4 mx-auto mt-3 mb-5">
+          <h2 class="card-title mx-auto">Contact</h2>
+          <hr>
+          <div class="card-body">
+              <form>
+                <div class="form-group">
+                  <label for="nameInput">Name</label>
+                  <input type="text" class="form-control" id="nameInput" aria-describedby="name" placeholder="Name">
+                </div>
+      
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+                </div>
+      
+                <div class="form-group">
+                    <label for="messageInput">Message</label>
+                    <textarea class="form-control" id="messageInput" rows="3" placeholder="Send me a message"></textarea>
+                </div>
+                
+                  <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+          </div>
+          </div>
       </div>
-    </main>
+
+      <div class="col-md-3 col-1"></div>
+    </div>
+    
+    <div class="m-3"> </div>
+
+  </main>
+
+
+
 
 
   <!-- Defines footer -->
-  <footer class="container-fluid fixed-bottom bg-secondary">
+  <footer class="container-fluid fixed-bottom bg-secondary p-0 mt-5">
+    <div class="container-fluid bg-primary p-1"> </div>
     <p class="text-white text-center">
       &copy; AndrewKnapp
     </p>
