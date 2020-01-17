@@ -1,38 +1,76 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
+
     <meta charset="UTF-8">
+
+    <!-- Link to Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- Link to personal Stylesheet -->
+    <link rel="stylesheet" href="/assets/style.css">
+
 </head>
+
+
+
 <body>
 
+  <!-- Defines Header with name and navbar -->
+  <header class="container-fluid bg-secondary mx-0">
+    <div class="row">
+      <div class="col-sm">
+        <a href="index.html"><h1>Andrew Knapp</h1></a>
+      </div>
 
-    <div class="card p-2" style="width: 18rem;">
-        <h2 class="card-title mx-auto">Contact</h2>
-        <hr>
-        <div class="card-body">
-            <form>
-                <div class="form-group">
+      <div class="col-sm">
+        <ul class="nav justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="portfolio.html">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
 
-                  <label for="nameInput">Name</label>
-                  <input type="text" class="form-control" id="nameInput" aria-describedby="name" placeholder="Name">
-                </div>
-
-                <div class="form-group">
-
-                  <label for="exampleInputEmail1">Email</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
-
-                </div>
-
-                <div class="form-group">
-                  <label for="messageInput">Message</label>
-                  <textarea class="form-control" id="messageInput" rows="5" placeholder="Send me a message"></textarea>                </div>
-                
-                <button type="submit" class="btn btn-primary">Submit</button>
-              </form>
     </div>
-    
-    
+  </header>
+
+  
+    <main class="card w-50 p-2 mx-auto mt-3" style="width: 18rem;">
+      <h2 class="card-title mx-auto">Contact</h2>
+      <hr>
+      <div class="card-body">
+          <form>
+            <div class="form-group">
+              <label for="nameInput">Name</label>
+              <input type="text" class="form-control" id="nameInput" aria-describedby="name" placeholder="Name">
+            </div>
+
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+            </div>
+
+            <div class="form-group">
+                <label for="messageInput">Message</label>
+                <textarea class="form-control" id="messageInput" rows="3" placeholder="Send me a message"></textarea>
+            </div>
+            
+              <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+      </div>
+    </main>
+
+
+  <!-- Defines footer -->
+  <footer class="container-fluid fixed-bottom bg-secondary">
+    <p class="text-white text-center">
+      &copy; AndrewKnapp
+    </p>
+  </footer>
 </body>
 </html>
