@@ -16,22 +16,24 @@
 <body>
 
   <!-- Defines Header with name and navbar -->
-  <header class="container-fluid bg-secondary mx-0">
+  <header class="container-fluid mx-0 bg-secondary">
     <div class="row">
-      <div class="col-sm">
-        <a href="index.html"><h1>Andrew Knapp</h1></a>
+      <div class="col-md-4 col-sm-12 bg-primary">
+        <a href="index.html"><h1 class="text-white text-center">Andrew Knapp</h1></a>
       </div>
 
-      <div class="col-sm">
-        <ul class="nav justify-content-end">
+      <div class="col-md-4 col-sm-0"></div>
+
+      <div class="col-md-4 col-sm-12">
+        <ul class="nav justify-content-center">
           <li class="nav-item">
-            <a class="nav-link" href="index.html">About</a>
+            <a class="nav-link text-white" href="index.html">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="portfolio.html">Portfolio</a>
+            <a class="nav-link text-white" href="portfolio.html">Portfolio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
+            <a class="nav-link text-white" href="contact.html">Contact</a>
           </li>
         </ul>
       </div>
@@ -39,15 +41,24 @@
     </div>
   </header>
 
-  <main class="card mt-3 mx-auto w-75 p-3">
-    <h2 class="card-title">About Me</h2>
+  <main class="container mb-5 mx-auto w-75 p-3">
+    <h2 class="title">About Me</h2>
     <hr>
-    <img id="headshot" class="rounded float-left mx-2" src="assets/images/headshot.jpg">
-    <span>
-      I am a Junior Web Developer with my eyes toward the future. I have studied and practiced with HTML, CSS, Javascript. 
-      My current area of study is using Bootstrap to streamline the website-making process. I have experience in maintaining 
-      sites and ensuring they meet common Accesibility requirements.
-    </span>
+    <div class="row">
+
+    <div class="col-md-4">
+      <img id="headshot" class="rounded float-left mx-2 w-100 d-inline-block" src="assets/images/headshot.jpg">
+    </div>
+
+    <div class="col-md-8">
+      <span>
+        I am a Junior Web Developer with my eyes toward the future. I have studied and practiced with HTML, CSS, Javascript. 
+        My current area of study is using Bootstrap to streamline the website-making process. I have experience in maintaining 
+        sites and ensuring they meet common Accesibility requirements.
+      </span>
+    </div>
+    </div>
+    
   </main>
 
 
@@ -55,7 +66,8 @@
 
 
   <!-- Defines footer -->
-  <footer class="container-fluid fixed-bottom bg-secondary">
+  <footer class="container-fluid fixed-bottom bg-secondary p-0">
+    <div class="container-fluid bg-primary p-1"> </div>
     <p class="text-white text-center">
       &copy; AndrewKnapp
     </p>
