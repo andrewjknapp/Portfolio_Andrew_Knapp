@@ -1,5 +1,10 @@
 # Portfolio_Andrew_Knapp
 
+## To do
+
+[] Fix responsiveness
+    - When resizing browser website is responsive, but on mobile devices website is not. I used bootstrap column sizes to be responsive. 
+
 ## Project purpose
 This site was a practice exercise in building a website using only html and bootstrap. This will be used as a template once I create my own portfolio later on.
 
